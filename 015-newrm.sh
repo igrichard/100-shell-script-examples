@@ -18,6 +18,9 @@ if [ $# -eq 0 ] ; then  # let 'rm' ouptut the usage error
   exec $realrm	# our shell dies and is replaced by /bin/rm
 fi
 
+if [ $# -eq 0 ] ; then  # let 'rm' ouptut the usage error 
+  exec $realrm	# our shell dies and is replaced by /bin/rm
+fi
 # parse all options looking for '-f'
 
 flags=""
